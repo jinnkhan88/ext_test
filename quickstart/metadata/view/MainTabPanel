@@ -1,0 +1,207 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "maintabpanel",
+        "designer|userClassName": "MainTabPanel"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyTabPanel",
+    "designerId": "f18711e7-a4ae-4f46-b619-c99fba6c9a99",
+    "viewControllerInstanceId": "3edc0719-b188-4570-a646-84c845d56b6f",
+    "viewModelInstanceId": "f99903cf-a912-45e4-91d7-01db3d0252f3",
+    "cn": [
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "grouped": true,
+                "height": "100%",
+                "iconCls": "x-fa fa-users",
+                "store": "EmployeeStore",
+                "title": "Employee Directory"
+            },
+            "configAlternates": {
+                "grouped": "boolean",
+                "height": "auto",
+                "iconCls": "string",
+                "store": "store",
+                "title": "string"
+            },
+            "name": "MyGrid",
+            "designerId": "5f2219fc-d86e-4a84-832c-3ed9d8bd4e9c",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "iconCls",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "firstName",
+                        "docked": null,
+                        "flex": 1,
+                        "minWidth": null,
+                        "text": "First Name",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "minWidth": "auto",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "cdb599ad-7979-41ce-b561-377cf511d583",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "lastName",
+                        "docked": null,
+                        "flex": 1,
+                        "text": "Last Name",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "8590c720-8807-4bd1-b4c2-36be6d356c52",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "phoneNumber",
+                        "docked": null,
+                        "flex": 1,
+                        "text": "Phone Number",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "7b7cc1f5-187c-47cb-acf1-02364edb4d6c",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridChildtap",
+                        "implHandler": [
+                            "                Ext.Viewport.add({",
+                            "                    xtype: 'popupform',",
+                            "                    width: 400,",
+                            "                    record: location.record,",
+                            "                    viewModel : {",
+                            "                        data: {",
+                            "                            employee: location.record",
+                            "                        }",
+                            "                    }",
+                            "                });"
+                        ],
+                        "name": "childtap",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridChildtap",
+                    "designerId": "de94b77b-714d-46cb-8a35-c8e2daa8fdd4"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<h1>About Sencha</h1><br/>More than 10,000 customers and 60% of the Fortune 100 rely on Sencha solutions to deliver innovative applications that drive their businesses. With a longstanding commitment to web technologies, Sencha dramatically reduces the cost and complexity of developing and delivering enterprise applications across multiple device types.<br/><br/><h2>Create feature-rich HTML5 applications using JavaScript</h2><br/>Sencha Ext JS is the most comprehensive MVC/MVVM JavaScript framework for building feature-rich, cross-platform web applications targeting desktops, tablets, and smartphones. Ext JS leverages HTML5 features on modern browsers while maintaining compatibility and functionality for legacy browsers.<br/><br/>Ext JS features hundreds of high-performance UI widgets that are meticulously designed to fit the needs of the simplest as well as the most complex web applications. Ext JS templates and layout manager give you full control over your display irrespective of devices and screen sizes. An advanced charting package allows you to visualize large quantities of data. The framework includes a robust data package that can consume data from any backend data source. Ext JS also offers several out-of-the-box themes, and complete theming support that lets you build applications that reflect your brand. It also includes an accessibility package (ARIA) to help with Section 508 compliance.",
+                "iconCls": "x-fa fa-info-circle",
+                "padding": 20,
+                "title": "About Sencha"
+            },
+            "configAlternates": {
+                "html": "string",
+                "iconCls": "string",
+                "padding": "auto",
+                "title": "string"
+            },
+            "name": "MyPanel",
+            "designerId": "831ce1cf-edc8-43e3-a1ae-cf110d29fb3c"
+        }
+    ]
+}

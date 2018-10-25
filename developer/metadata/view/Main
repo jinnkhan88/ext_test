@@ -1,0 +1,52 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "slide",
+        "container|animation.direction": "up",
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userClassName": "Main",
+        "layout": "card"
+    },
+    "configAlternates": {
+        "container|animation": "auto",
+        "container|animation.direction": "string",
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyContainer",
+    "designerId": "d4edd2f0-8447-4f1e-baca-6032039f6337",
+    "viewControllerInstanceId": "45232693-a3e4-4f6a-9605-a2fbc837e718",
+    "viewModelInstanceId": "4ce9ed6a-ab0a-437b-8cd1-6b9d8f34a4c7",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "hero",
+            "designerId": "7e1257d2-2f6f-4753-bd72-4648e67c47d0",
+            "masterInstanceId": "9b2f5bd0-9d24-4760-a701-3cc10d82607f"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "devcards",
+            "designerId": "6bc41faf-efa3-4f9b-814b-cd26093ad176",
+            "masterInstanceId": "719d0d1f-e8e7-429d-8d7b-2d5696fcf892"
+        }
+    ]
+}

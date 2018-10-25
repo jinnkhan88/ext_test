@@ -1,0 +1,28 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            " {",
+            "     extjs: true,",
+            "     touch: true,",
+            "     architect: true,",
+            "     themer: true,",
+            "     inspector: true,",
+            "     devsCount: 0",
+            " }"
+        ],
+        "designer|userAlias": "filterform",
+        "designer|userClassName": "FilterFormViewModel"
+    },
+    "configAlternates": {
+        "data": "object",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "0bc9a1d1-6bde-4a0c-a7db-e15acdc50e04"
+}

@@ -1,0 +1,31 @@
+{
+    "type": "tritonthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyTritonTheme",
+        "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+        ]
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "platform": "typedarray"
+    },
+    "name": "MyTritonTheme",
+    "designerId": "8d7b0581-30a4-4045-b3eb-234e106420b9",
+    "storage": {
+        "needsCompile": false,
+        "simple": {
+            "pkgVersion": 1
+        },
+        "compiledCss": "",
+        "nameIndex": 1,
+        "varData": {}
+    }
+}

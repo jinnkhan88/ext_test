@@ -1,0 +1,29 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "User"
+        ],
+        "name": "ManagedUsers",
+        "stores": [
+            "Users"
+        ],
+        "views": [
+            "Main",
+            "UpdateRecordForm"
+        ]
+    },
+    "configAlternates": {
+        "models": "typedarray",
+        "name": "string",
+        "stores": "typedarray",
+        "views": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

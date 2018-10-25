@@ -1,0 +1,22 @@
+.list-item-dev { 
+    display: flex; 
+}
+
+.list-item-name {
+    font-weight: bold;
+}
+
+.list-item-details {
+    margin-left: 0.5em;    
+}
+
+.list-item-skill-tag {
+    list-style: none; 
+    margin-left: 0.5em; 
+}
+
+
+.dev-card-skill-tag {
+    margin-left: 1.5em;
+    display: list-item;
+}

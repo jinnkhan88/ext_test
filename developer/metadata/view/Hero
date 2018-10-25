@@ -1,0 +1,184 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "designer|userAlias": "hero",
+        "designer|userClassName": "Hero",
+        "layout": "vbox"
+    },
+    "configAlternates": {
+        "container|align": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string"
+    },
+    "name": "MyContainer",
+    "designerId": "9b2f5bd0-9d24-4760-a701-3cc10d82607f",
+    "viewControllerInstanceId": "64faf760-f128-47c9-b8dc-14b8bd17cab8",
+    "viewModelInstanceId": "b54c5740-4fe5-40e0-9747-4d9e154fc5b7",
+    "cn": [
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Flex to middle",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyComponent8",
+            "designerId": "9d740484-de31-4acc-94b4-f0afc4d03217"
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "hero-card-title"
+                ],
+                "designer|displayName": "Sencha Devs",
+                "html": "Sencha Devs",
+                "layout|flex": null
+            },
+            "configAlternates": {
+                "cls": "typedarray",
+                "designer|displayName": "string",
+                "html": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyComponent5",
+            "designerId": "26b16487-42de-47a2-9509-94b2b7bf0b05"
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "hero-card-sub-title"
+                ],
+                "designer|displayName": "Sencha Dev Info",
+                "html": "Worldwide Sencha developers database.  Find <b><i>your</i></b> developer here.",
+                "padding": 10
+            },
+            "configAlternates": {
+                "cls": "typedarray",
+                "html": "string",
+                "layout|flex": "number",
+                "designer|displayName": "string",
+                "padding": "auto"
+            },
+            "name": "MyComponent6",
+            "designerId": "08cb799f-8dcb-498b-90bf-9548232e0cfa"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "x-fa fa-arrow-circle-o-down",
+                "margin": "60 0 0 0",
+                "text": "Get Started"
+            },
+            "configAlternates": {
+                "iconCls": "string",
+                "margin": "auto",
+                "text": "string"
+            },
+            "name": "MyButton3",
+            "designerId": "6b7bceb2-e10d-4242-858a-1e70ce7e649d",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "button",
+                            "e"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "this.up('main').setActiveItem(1);"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "handler",
+                    "designerId": "97cc2611-024d-4912-8c0c-7b6fa411141b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Flex to middle",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyComponent7",
+            "designerId": "cea7b2cc-bcff-4831-8cb2-ff96ed1932b7"
+        },
+        {
+            "type": "Ext.Component",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "dev-count"
+                ],
+                "designer|displayName": "Number of devs",
+                "html": [
+                    "<span class=\"dev-count-label\">Devs:</span> <b>{devsCount}<b>"
+                ],
+                "padding": 12
+            },
+            "configAlternates": {
+                "html": "binding",
+                "cls": "typedarray",
+                "designer|displayName": "string",
+                "padding": "auto"
+            },
+            "name": "MyComponent9",
+            "designerId": "3478b3e7-1096-47b1-a24a-5844a5c4ca16"
+        }
+    ]
+}

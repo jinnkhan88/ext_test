@@ -1,0 +1,68 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "filterform",
+        "designer|userClassName": "FilterFormViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "0e735069-1253-4223-8fef-4f0fbc8e831d",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|commentHeader": [
+                    "This function is called using default config which assings configs to all the items"
+                ],
+                "fn": "onFilterChange",
+                "implHandler": [
+                    "let devsStore = Ext.first('#devList').getStore(),",
+                    "     vm = this.getViewModel(),",
+                    "     allFilters = ['extjs', 'touch', 'architect', 'themer', 'inspector'],",
+                    "     filters = [];",
+                    "",
+                    "// collect up an array of checked checkboxes",
+                    "Ext.each(allFilters, function(item) {",
+                    "    if (vm.get(item)) {",
+                    "        filters.push(item);",
+                    "    }",
+                    "});",
+                    "",
+                    "// clear any filtering on the Store",
+                    "devsStore.clearFilter();",
+                    "",
+                    "",
+                    "// filter the developers Store using only the checked filters",
+                    "devsStore.filterBy(function(rec) {",
+                    "    let skills = Ext.Array.map(rec.get('skills'), function(item) {",
+                    "        return item.toLowerCase().replace(/ /g, '');",
+                    "    });",
+                    "",
+                    "    return Ext.Array.intersect(filters, skills).length;",
+                    "    ",
+                    "});",
+                    ""
+                ]
+            },
+            "configAlternates": {
+                "designer|commentHeader": "comment",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "onFilterChange",
+            "designerId": "8b0f25aa-266f-425d-a56e-8d0f4783c57b"
+        }
+    ]
+}

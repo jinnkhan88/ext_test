@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "{",
+            "devsCount: 0",
+            "}"
+        ],
+        "designer|userAlias": "hero",
+        "designer|userClassName": "HeroViewModel"
+    },
+    "configAlternates": {
+        "data": "object",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "designerId": "b54c5740-4fe5-40e0-9747-4d9e154fc5b7"
+}

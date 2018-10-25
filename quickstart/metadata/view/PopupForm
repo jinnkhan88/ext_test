@@ -1,0 +1,251 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "designer|userAlias": "popupform",
+        "designer|userClassName": "PopupForm",
+        "floating": true,
+        "modal": true,
+        "title": "Update Record"
+    },
+    "configAlternates": {
+        "floating": "boolean",
+        "centered": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "modal": "boolean",
+        "title": "string"
+    },
+    "designerId": "95a48823-0aee-4fc1-a05c-1c7a9d5fe3e8",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "floating",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "b7693b03-654d-414e-81e3-3dd49e7701b4",
+    "viewModelInstanceId": "721e40c0-7991-46f4-b336-9ae5d8c3c435",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{employee.firstName}"
+                ],
+                "label": "First Name",
+                "name": "firstname"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField",
+            "designerId": "16d9197d-c9b3-4dcd-987c-54f6e6159a51"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{employee.lastName}"
+                ],
+                "label": "Last Name",
+                "name": "lastname"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField1",
+            "designerId": "8bf1ac5a-4471-4bd3-bf1b-d833e12f24bd"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{employee.phoneNumber}"
+                ],
+                "label": "Phone Number",
+                "name": "phonenumber"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string"
+            },
+            "name": "MyTextField2",
+            "designerId": "50fd10c3-08d1-4d16-8dac-9b98fcd09359"
+        },
+        {
+            "type": "Ext.field.Select",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{employee.officeLocation}"
+                ],
+                "label": "Office Location",
+                "name": "office",
+                "options": [
+                    "[{",
+                    "            text: \"Redwood City, CA\",",
+                    "            value: 'rwcca'",
+                    "        }, {",
+                    "            text: \"Lawrence, KS\",",
+                    "            value: 'lk'",
+                    "        }, {",
+                    "            text: \"Frederick, MD\",",
+                    "            value: 'fmd'",
+                    "    }]"
+                ]
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string",
+                "options": "array"
+            },
+            "name": "MySelectField",
+            "designerId": "7b6ee73f-642b-4c03-8d7e-87d6162276f0"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "2fe8c445-e3e9-4a0c-8eb0-4cb2dea50e89",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "x-fa fa-check",
+                        "text": "Submit"
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "ad875014-e963-4739-b6ef-413fc52cd6e2",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "submitUpdate",
+                                "implHandler": [
+                                    "                var view = this.getView(),",
+                                    "                    record = view.getRecord();",
+                                    "",
+                                    "                view.destroy();",
+                                    "                record.commit();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "submitUpdate",
+                            "designerId": "658d2ff5-2ab0-4329-b955-5db1efcb77b7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "x-fa fa-close",
+                        "text": "Cancel"
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "68d03ec4-1e43-4229-bbcf-21a1191f4a33",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "cancelUpdate",
+                                "implHandler": [
+                                    "                var view = this.getView(),",
+                                    "                    record = view.getRecord();",
+                                    "",
+                                    "                view.destroy();",
+                                    "                record.reject();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "cancelUpdate",
+                            "designerId": "e92319ef-3414-4b13-9a0b-74188460cbca"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

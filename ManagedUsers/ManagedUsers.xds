@@ -1,0 +1,64 @@
+{
+    "name": "ManagedUsers",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.6.0.13",
+            "frameworkVersion": "6.6.0.258"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:52124/ManagedUsers",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app",
+            "buildPlatform": false
+        }
+    },
+    "xdsVersion": "4.2.4",
+    "xdsBuild": 389,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern66",
+    "viewOrderMap": {
+        "view": [
+            "616436a5-76d6-4746-be0e-ffea0f235c76",
+            "7b616fc2-426e-4075-b3a9-eb1aee13a980",
+            "fd2ecd07-b791-4e85-a885-b8c721f0f837",
+            "9b51842a-4bb4-48c9-9e18-9d964a1f521a",
+            "54973457-496c-47c3-b688-932357950b31",
+            "df69d8d1-d422-4f91-8388-5fc41d67ad23"
+        ],
+        "store": [
+            "23d1dfb7-1bce-426b-8a05-c31ec8063fe8"
+        ],
+        "controller": [],
+        "model": [
+            "3bae9554-5edc-4621-b183-a0e6e351655c"
+        ],
+        "resource": [
+            "4eb2aaf9-5172-487a-88c9-417e720af161",
+            "c43be4b8-644b-4d14-97af-0e996fd851eb",
+            "7f5f8472-11ba-4ab2-bd90-c46b4a0b5465"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

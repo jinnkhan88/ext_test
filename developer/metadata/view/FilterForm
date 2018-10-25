@@ -1,0 +1,352 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 8,
+        "designer|userAlias": "filterform",
+        "designer|userClassName": "FilterForm"
+    },
+    "configAlternates": {
+        "viewModel": "object",
+        "bodyPadding": "auto",
+        "defaults": "object",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyFormPanel",
+    "designerId": "824cd419-2f22-4f5c-8a10-b49b7a7aa3c3",
+    "viewControllerInstanceId": "0e735069-1253-4223-8fef-4f0fbc8e831d",
+    "viewModelInstanceId": "0bc9a1d1-6bde-4a0c-a7db-e15acdc50e04",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Filter By"
+            },
+            "configAlternates": {
+                "docked": "string",
+                "title": "string"
+            },
+            "name": "MyTitleBar1",
+            "designerId": "0633e241-69cb-46c7-a75b-4de9fd2fb42d",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "iconCls": "x-fa fa-close",
+                        "text": "Close"
+                    },
+                    "configAlternates": {
+                        "align": "string",
+                        "iconCls": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "8e34c0cd-131a-428d-8701-154a8cade11b",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCloseButtonTap",
+                                "implHandler": [
+                                    "this.getView().hide();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCloseButtonTap",
+                            "designerId": "f94c29ab-615d-4663-b363-386d5836cdfd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checked": [
+                    "{extjs}"
+                ],
+                "designer|displayName": "ExtJS",
+                "label": "ExtJS",
+                "labelWidth": 100
+            },
+            "configAlternates": {
+                "checked": "binding",
+                "designer|displayName": "string",
+                "label": "string",
+                "labelWidth": "auto"
+            },
+            "name": "MyCheckbox",
+            "designerId": "9c67390c-8880-49eb-85c1-725fe7593993",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 50,
+                        "fn": "onCheckboxChange4",
+                        "implHandler": [
+                            "this.onFilterChange();"
+                        ],
+                        "name": "change",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "delay": "number",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxChange4",
+                    "designerId": "a4883692-93b4-40d4-ae5d-6735f7626b13"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checked": [
+                    "{touch}"
+                ],
+                "designer|displayName": "Touch",
+                "label": "Touch",
+                "labelWidth": 100
+            },
+            "configAlternates": {
+                "checked": "binding",
+                "designer|displayName": "string",
+                "label": "string",
+                "labelWidth": "auto"
+            },
+            "name": "MyCheckbox1",
+            "designerId": "3e59bcfc-3359-4e3a-b30b-04f30a073787",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 50,
+                        "fn": "onCheckboxChange3",
+                        "implHandler": [
+                            "this.onFilterChange();"
+                        ],
+                        "name": "change",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "delay": "number",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxChange3",
+                    "designerId": "a3ca9f85-0799-42ee-a9ea-a70973ed8e0e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checked": [
+                    "{architect}"
+                ],
+                "designer|displayName": "SA",
+                "label": "Architect",
+                "labelWidth": 100
+            },
+            "configAlternates": {
+                "checked": "binding",
+                "designer|displayName": "string",
+                "label": "string",
+                "labelWidth": "auto"
+            },
+            "name": "MyCheckbox2",
+            "designerId": "19cc1830-ec61-42e2-96e4-bcbb58a564f5",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 50,
+                        "fn": "onCheckboxChange2",
+                        "implHandler": [
+                            "this.onFilterChange();"
+                        ],
+                        "name": "change",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "delay": "number",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxChange2",
+                    "designerId": "e667255d-4c8f-4f3d-b2c7-8b0c6e789a48"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checked": [
+                    "{themer}"
+                ],
+                "designer|displayName": "Themer",
+                "label": "Themer",
+                "labelWidth": 100
+            },
+            "configAlternates": {
+                "checked": "binding",
+                "designer|displayName": "string",
+                "label": "string",
+                "labelWidth": "auto"
+            },
+            "name": "MyCheckbox3",
+            "designerId": "c6059340-5cfd-40db-ae56-94ef7a6a15c9",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 50,
+                        "fn": "onCheckboxChange1",
+                        "implHandler": [
+                            "this.onFilterChange();"
+                        ],
+                        "name": "change",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "delay": "number",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxChange1",
+                    "designerId": "cfa47e02-aae6-4bf6-b80a-697cff09c697"
+                }
+            ]
+        },
+        {
+            "type": "Ext.field.Checkbox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checked": [
+                    "{inspector}"
+                ],
+                "designer|displayName": "Inspector",
+                "label": "Inspector",
+                "labelWidth": 100
+            },
+            "configAlternates": {
+                "checked": "binding",
+                "designer|displayName": "string",
+                "label": "string",
+                "labelWidth": "auto"
+            },
+            "name": "MyCheckbox4",
+            "designerId": "c1b5fe87-e539-4dfe-a295-5dcc0a89f3a3",
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "delay": 50,
+                        "fn": "onCheckboxChange",
+                        "implHandler": [
+                            "this.onFilterChange();"
+                        ],
+                        "name": "change",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "delay": "number",
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxChange",
+                    "designerId": "eda54573-93ca-4eaf-90fa-31bee20c2610"
+                }
+            ]
+        }
+    ]
+}

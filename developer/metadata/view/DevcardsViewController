@@ -1,0 +1,26 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "dataChangeCount": 0,
+        "designer|userAlias": "devcards",
+        "designer|userClassName": "DevcardsViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "dataChangeCount": "number"
+    },
+    "designerId": "336308cb-0644-49ae-9804-a5a3aa79e730",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "dataChangeCount",
+            "type": "string"
+        }
+    ]
+}

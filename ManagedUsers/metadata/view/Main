@@ -1,0 +1,204 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userClassName": "Main",
+        "tabBarPosition": "bottom"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "tabBarPosition": "string"
+    },
+    "name": "MyTabPanel",
+    "designerId": "616436a5-76d6-4746-be0e-ffea0f235c76",
+    "viewControllerInstanceId": "fd2ecd07-b791-4e85-a885-b8c721f0f837",
+    "viewModelInstanceId": "7b616fc2-426e-4075-b3a9-eb1aee13a980",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "x-fa fa-users",
+                "layout": "vbox",
+                "title": "Managed Users"
+            },
+            "configAlternates": {
+                "iconCls": "string",
+                "title": "string",
+                "layout": "string"
+            },
+            "name": "MyContainer",
+            "designerId": "096ba42d-7feb-4171-83e4-dcaf1749b8ed",
+            "cn": [
+                {
+                    "type": "Ext.grid.Grid",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": "100%",
+                        "hideHeaders": true,
+                        "store": "Users",
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "store": "store",
+                        "width": "auto",
+                        "pinnedHeader": "binding",
+                        "hideHeaders": "boolean"
+                    },
+                    "name": "MyGrid",
+                    "designerId": "aa15c7f6-3c34-4569-b46d-7d381ac6689c",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "firstName",
+                                "docked": null,
+                                "text": "First Name",
+                                "width": 120
+                            },
+                            "configAlternates": {
+                                "dataIndex": "datafield",
+                                "docked": "string",
+                                "text": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyColumn",
+                            "designerId": "85e42ef9-98ff-4566-bf26-441542ea44cd"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "lastName",
+                                "docked": null,
+                                "text": "Last Name",
+                                "width": 120
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "text": "string",
+                                "width": "auto",
+                                "dataIndex": "datafield"
+                            },
+                            "name": "MyColumn1",
+                            "designerId": "0f15672d-ffb8-4950-8e79-f97970b4f98a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "email",
+                                "docked": null,
+                                "text": "Email",
+                                "width": 120
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "text": "string",
+                                "width": "auto",
+                                "dataIndex": "datafield"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "78044acb-8d04-43fb-a80b-38cb30cf0380"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onPopupForm",
+                                "implHandler": [
+                                    "Ext.create('Ext.window.Window',{",
+                                    "    title:'User Forms',",
+                                    "    id:'user_form_modal',",
+                                    "    height:600,",
+                                    "    width:800,",
+                                    "    modal:true,",
+                                    "",
+                                    "",
+                                    "    items:[{",
+                                    "        xtype:'updaterecordform',",
+                                    "        record: location.record,",
+                                    "        viewModel : {",
+                                    "            data: {",
+                                    "                user: location.record",
+                                    "            }",
+                                    "        }",
+                                    "    }],",
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    "",
+                                    "}).show();"
+                                ],
+                                "name": "childtap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onPopupForm",
+                            "designerId": "3b9162f7-251c-4f65-b816-7b1d2a135425"
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "docked": null,
+                                "text": "MyButton2"
+                            },
+                            "configAlternates": {
+                                "docked": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "dfd9a04e-6850-4079-8f67-937b7690a06f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

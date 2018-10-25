@@ -1,0 +1,568 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "slide",
+        "designer|userAlias": "devcards",
+        "designer|userClassName": "Devcards",
+        "layout": "card",
+        "reference": "devcards"
+    },
+    "configAlternates": {
+        "container|animation": "auto",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "layout": "string",
+        "reference": "string"
+    },
+    "name": "MyContainer",
+    "designerId": "719d0d1f-e8e7-429d-8d7b-2d5696fcf892",
+    "viewControllerInstanceId": "336308cb-0644-49ae-9804-a5a3aa79e730",
+    "viewModelInstanceId": "d8027277-ff47-4399-91b8-db5c5ae2e66a",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "List of developers",
+                "layout": "hbox"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "layout": "string"
+            },
+            "name": "MyContainer",
+            "designerId": "314ab1a8-a06e-4077-b5d7-f4cefa1fe167",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "Developers"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "title": "string"
+                    },
+                    "name": "MyTitleBar",
+                    "designerId": "819e1760-aefc-425e-a012-1256a470cbea",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "align": "right",
+                                "iconCls": "x-fa fa-filter",
+                                "text": "Filter"
+                            },
+                            "configAlternates": {
+                                "platformConfig": "object",
+                                "align": "string",
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "93ea9d5f-2f6d-45c7-8576-416498669fd8",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "platformConfig",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onOpenFilterButtonTap",
+                                        "implHandler": [
+                                            "var filtersMenu = this.lookupReference('filters');",
+                                            "filtersMenu.show();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onOpenFilterButtonTap",
+                                    "designerId": "a87f73ca-298a-4f93-94a5-4f2901e95560"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disableSelection": true,
+                        "itemId": "devList",
+                        "layout|flex": 1,
+                        "minWidth": 300,
+                        "reference": "devlist",
+                        "store": [
+                            "{devs}"
+                        ],
+                        "striped": true
+                    },
+                    "configAlternates": {
+                        "disableSelection": "boolean",
+                        "store": "binding",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "minWidth": "auto",
+                        "reference": "string",
+                        "striped": "boolean"
+                    },
+                    "name": "MyList",
+                    "designerId": "9caa0e44-a8e5-4db8-abdf-67417f79abbc",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<div class=\"list-item-dev\">",
+                                    "    <div class=\"list-header\">",
+                                    "        <img class=\"list-item-image\" src=\"{picture.thumbnail}\"/> ",
+                                    "    </div>",
+                                    "    <div class=\"list-item-details\">",
+                                    "        <div class=\"list-item-name\">{name.first:capitalize} {name.last:capitalize}</div> ",
+                                    "        <tpl for=\"skills\"> ",
+                                    "            <div class=\"list-item-skill-tag\">{.}</div> ",
+                                    "        </tpl> ",
+                                    "    </div> ",
+                                    "</div>"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "itemTpl",
+                            "designerId": "d833a496-39a3-4ffa-9822-68b309cae884"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDevTap",
+                                "implHandler": [
+                                    "let record = location.record;",
+                                    "this.getViewModel().set('dev', record);",
+                                    "let active = this.getView().animateActiveItem(1, 'slide');",
+                                    "if (active.record !== record) {",
+                                    "    active.down('tabpanel').setActiveItem(0);",
+                                    "}",
+                                    "active.record = record;"
+                                ],
+                                "name": "childtap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDevTap",
+                            "designerId": "fc3bcb22-9127-4d8f-8f23-160322741e79"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "designer|displayName": "Developer info",
+                "layout": "vbox"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "designer|displayName": "string",
+                "layout": "string"
+            },
+            "name": "MyContainer1",
+            "designerId": "881cddd9-3b1c-47ac-9c66-9714f71732e9",
+            "cn": [
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Top Toolbar",
+                        "docked": "top"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "docked": "string"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "379706a8-1fc2-401b-af10-a36aca7e7651",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-arrow-left",
+                                "text": "Dev List"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "12ff7efe-74cd-43f1-bac6-aa4db69edec0",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onDevListButtonTap",
+                                        "implHandler": [
+                                            "this.getView().animateActiveItem(0, {type: 'slide', direction: 'right'});"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onDevListButtonTap",
+                                    "designerId": "2de48dca-7be2-4cba-a528-30ad21f522be"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Profile Picture",
+                        "html": [
+                            "<img class=\"dev-card-image\" src=\"{dev.picture.large}\" />"
+                        ],
+                        "margin": 20
+                    },
+                    "configAlternates": {
+                        "html": "binding",
+                        "designer|displayName": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyComponent",
+                    "designerId": "493dd21b-b5f0-460b-aa20-94e397bbc4db"
+                },
+                {
+                    "type": "Ext.Component",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Full Name",
+                        "html": [
+                            "<div class=\"dev-card-name\">{dev.name.first:capitalize} {dev.name.last:capitalize}</div>"
+                        ],
+                        "margin": "0 0 20 0"
+                    },
+                    "configAlternates": {
+                        "html": "binding",
+                        "designer|displayName": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyComponent1",
+                    "designerId": "b087a8e8-60ae-4d71-87db-064fd4169dfb"
+                },
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "Tab Panel with info",
+                        "layout|flex": 1,
+                        "width": "100%"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "layout|flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyTabPanel",
+                    "designerId": "e83e344d-4450-4743-a18a-996bf11a374f",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-info",
+                                "padding": 20,
+                                "scrollable": "vertical",
+                                "title": "Info"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "padding": "auto",
+                                "scrollable": "auto",
+                                "title": "string"
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "f697b573-a5d2-4cf5-aca9-c5c7b1bb005d",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "iconCls",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "Ext.Component",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Registered",
+                                        "html": "<b>Registered since:</b> July 12, 2013",
+                                        "margin": "0 0 29 0"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string",
+                                        "margin": "auto"
+                                    },
+                                    "name": "MyComponent2",
+                                    "designerId": "56aa838d-dcd3-4327-9eb0-f044b97d33cc"
+                                },
+                                {
+                                    "type": "Ext.Component",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "Bio",
+                                        "html": "<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p><br><p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p><br><p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p><br><p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>"
+                                    },
+                                    "configAlternates": {
+                                        "designer|displayName": "string",
+                                        "html": "string"
+                                    },
+                                    "name": "MyComponent3",
+                                    "designerId": "f48bb2e8-25aa-4b0c-9486-3e97c8449f05"
+                                },
+                                {
+                                    "type": "Ext.Component",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "data": [
+                                            "{dev.skills}"
+                                        ],
+                                        "designer|displayName": "Skills"
+                                    },
+                                    "configAlternates": {
+                                        "html": "string",
+                                        "data": "binding",
+                                        "designer|displayName": "string"
+                                    },
+                                    "name": "MyComponent4",
+                                    "designerId": "51ec2aae-abc2-417e-88ad-4a64ab65fd4b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.XTemplate",
+                                            "reference": {
+                                                "name": "tpl",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "tpl",
+                                                "implHandler": [
+                                                    "<div class=\"dev-card-skills-ct\"><b>Skills:<br></b><tpl for=\".\"><span class=\"dev-card-skill-tag\">{.}</span></tpl></div>"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|displayName": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "tpl",
+                                            "designerId": "da641f1f-e04f-464b-a7b7-6a1d941df184"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": [
+                                    "<b>e-mail:</b> {dev.email}<br><br><b>phone:</b> {dev.cell}<br><br><b>Loc:</b> {dev.location.city:capitalize}, {dev.location.state:capitalize} &nbsp;&nbsp;<b><i>{dev.nat:uppercase}</i></b>"
+                                ],
+                                "iconCls": "x-fa fa-address-book",
+                                "padding": 20,
+                                "scrollable": "vertical",
+                                "title": "Contact"
+                            },
+                            "configAlternates": {
+                                "html": "binding",
+                                "iconCls": "string",
+                                "padding": "auto",
+                                "scrollable": "auto",
+                                "title": "string"
+                            },
+                            "name": "MyContainer3",
+                            "designerId": "3881748b-da88-4074-be78-49fd0581e747",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "iconCls",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "floated": true,
+                "platformConfig": [
+                    "{",
+                    "                phone: {",
+                    "                    floated: true,",
+                    "                    width: '100%',",
+                    "                    showAnimation: {",
+                    "                        type: 'slide',",
+                    "                        direction: 'down'",
+                    "                    },",
+                    "                    hideAnimation: {",
+                    "                        type: 'slideOut',",
+                    "                        direction: 'up'",
+                    "                    }",
+                    "                },",
+                    "                '!phone': {",
+                    "                    width: 150,",
+                    "                    showAnimation: {",
+                    "                        type: 'slide',",
+                    "                        direction: 'right'",
+                    "                    },",
+                    "                    hideAnimation: {",
+                    "                        type: 'slideOut',",
+                    "                        direction: 'left'",
+                    "                    }",
+                    "                }",
+                    "            }"
+                ],
+                "reference": "filters"
+            },
+            "configAlternates": {
+                "showAnimation": "object",
+                "hideAnimation": "object",
+                "platformConfig": "object",
+                "floated": "boolean",
+                "reference": "string"
+            },
+            "name": "filterform",
+            "designerId": "9deb92c2-f9db-4800-806c-04b7ea2abfe4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "platformConfig",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "824cd419-2f22-4f5c-8a10-b49b7a7aa3c3"
+        }
+    ]
+}

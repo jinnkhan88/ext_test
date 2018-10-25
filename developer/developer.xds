@@ -1,0 +1,63 @@
+{
+    "name": "developer",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.6.0.13",
+            "frameworkVersion": "6.6.0.258"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:53436/developer",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "4.2.4",
+    "xdsBuild": 389,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern66",
+    "viewOrderMap": {
+        "view": [
+            "719d0d1f-e8e7-429d-8d7b-2d5696fcf892",
+            "d8027277-ff47-4399-91b8-db5c5ae2e66a",
+            "336308cb-0644-49ae-9804-a5a3aa79e730",
+            "824cd419-2f22-4f5c-8a10-b49b7a7aa3c3",
+            "0e735069-1253-4223-8fef-4f0fbc8e831d",
+            "0bc9a1d1-6bde-4a0c-a7db-e15acdc50e04",
+            "9b2f5bd0-9d24-4760-a701-3cc10d82607f",
+            "64faf760-f128-47c9-b8dc-14b8bd17cab8",
+            "b54c5740-4fe5-40e0-9747-4d9e154fc5b7",
+            "d4edd2f0-8447-4f1e-baca-6032039f6337",
+            "4ce9ed6a-ab0a-437b-8cd1-6b9d8f34a4c7",
+            "45232693-a3e4-4f6a-9605-a2fbc837e718"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "4fcda79f-977f-448a-b56d-79626109d860",
+            "cc3a5e36-4033-4dee-a016-de29491e130f",
+            "26798d47-446f-4a60-83af-464a4cafe69a",
+            "8d7b0581-30a4-4045-b3eb-234e106420b9"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
