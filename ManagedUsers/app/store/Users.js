@@ -29,13 +29,13 @@ Ext.define('ManagedUsers.store.Users', {
             storeId: 'Users',
             model: 'ManagedUsers.model.User',
             autoLoad: true,
-            autoSync: true,
+           // autoSync: true,
             proxy: {
                 type: 'ajax',
-                url:'http://localhost:5000/api/users',
+                url:'http://35.237.204.34:5000/api/users',
                 api: {
-                    read: 'http://localhost:5000/api/users',
-                    create: 'http://localhost:5000/api/users',
+                    read: 'http://35.237.204.34:5000/api/users',
+                    create: 'http://35.237.204.34:5000/api/users',
   //                  update: 'app.php/users/update',
     //                destroy: 'app.php/users/destroy'
                 },
